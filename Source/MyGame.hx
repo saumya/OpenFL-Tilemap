@@ -56,7 +56,7 @@ import openfl.Assets;
 		this.aIDs.push(i5);
 		this.aIDs.push(i6);
 		
-		/*
+		
 		var t1:Tile = new Tile(i1, 100, 100);
 		tilemap.addTile(t1);
 		
@@ -74,7 +74,7 @@ import openfl.Assets;
 		
 		var t6:Tile = new Tile(i6, 240, 100);
 		tilemap.addTile(t6);
-		*/
+		
 		
 		addEventListener(Event.ENTER_FRAME,onEachFrame);
 	}

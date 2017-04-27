@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	
+	<meta title="HelloTileMap" package="com.sample.hellotilemap" version="1.0.0" company="Saumya" />
+	<app main="Main" path="Export" file="HelloTileMap" />
+	
+	<source path="Source" />
+	
+	<haxelib name="openfl" />
+	
+	<assets path="Assets" rename="assets" />
+	
+</project>

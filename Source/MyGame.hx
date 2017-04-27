@@ -18,8 +18,10 @@ import openfl.Assets;
 
  class MyGame extends Sprite
 {
-	 private var tilemap:Tilemap;
-	 private var tileset:Tileset;
+	private var tilemap:Tilemap;
+	private var tileset:Tileset;
+	
+	private var aIDs:Array<Int>;
 
 	public function new() 
 	{
@@ -46,6 +48,15 @@ import openfl.Assets;
 		var i5:Int = tileset.addRect(new Rectangle(118, 3, 22, 58));
 		var i6:Int = tileset.addRect(new Rectangle(146, 3, 23, 58));
 		
+		this.aIDs = [];
+		this.aIDs.push(i1);
+		this.aIDs.push(i2);
+		this.aIDs.push(i3);
+		this.aIDs.push(i4);
+		this.aIDs.push(i5);
+		this.aIDs.push(i6);
+		
+		/*
 		var t1:Tile = new Tile(i1, 100, 100);
 		tilemap.addTile(t1);
 		
@@ -63,6 +74,18 @@ import openfl.Assets;
 		
 		var t6:Tile = new Tile(i6, 240, 100);
 		tilemap.addTile(t6);
+		*/
+		
+		addEventListener(Event.ENTER_FRAME,onEachFrame);
+	}
+	private function addNewTiles():Void{
+		var a = Math.round(Math.random() * 5);
+		var tile:Tile = new Tile(this.aIDs[a], Math.random() * stage.stageWidth, Math.random() * stage.stageHeight);
+		tilemap.addTile(tile);
+	}
+	
+	private function onEachFrame(e:Event):Void{
+		addNewTiles();
 	}
 	
 }

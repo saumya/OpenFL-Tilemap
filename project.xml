@@ -4,6 +4,9 @@
 	<meta title="HelloTileMap" package="com.sample.hellotilemap" version="1.0.0" company="Saumya" />
 	<app main="Main" path="Export" file="HelloTileMap" />
 	
+	<set name="red" />
+	<window width="400" height="600" background="#9b44c4" if="red" />
+	
 	<source path="Source" />
 	
 	<haxelib name="openfl" />

@@ -2,8 +2,8 @@ TileMap Example
 ================
  OpenFL 4 added TileMap and this project is an example for using TileMap.
 
- [Reference tutorial is here][1]
- [Project XML format][2]
+ - [Reference tutorial is here][1]
+ - [Project XML format][2]
  
  
 

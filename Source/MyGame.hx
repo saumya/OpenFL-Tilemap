@@ -22,6 +22,8 @@ import openfl.Assets;
 	private var tileset:Tileset;
 	
 	private var aIDs:Array<Int>;
+	
+	private var tileCount:Int;
 
 	public function new() 
 	{
@@ -34,6 +36,9 @@ import openfl.Assets;
 	}
 	
 	public function init():Void{
+		
+		tileCount = 0;
+		
 		var bData:BitmapData = Assets.getBitmapData("assets/91825.png");
 		tileset = new Tileset(bData);
 		
@@ -82,6 +87,8 @@ import openfl.Assets;
 		var a = Math.round(Math.random() * 5);
 		var tile:Tile = new Tile(this.aIDs[a], Math.random() * stage.stageWidth, Math.random() * stage.stageHeight);
 		tilemap.addTile(tile);
+		
+		tileCount++;
 	}
 	
 	private function onEachFrame(e:Event):Void{

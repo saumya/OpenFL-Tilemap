@@ -46,6 +46,7 @@ import openfl.Assets;
 		addChild(tilemap);
 		
 		// Adding the graphics
+		// from one image file, we are getting parts of it as per defined in the reactangle below
 		var i1:Int = tileset.addRect(new Rectangle(1, 3, 24, 58));
 		var i2:Int = tileset.addRect(new Rectangle(30, 3, 24, 58));
 		var i3:Int = tileset.addRect(new Rectangle(62, 3, 20, 58));

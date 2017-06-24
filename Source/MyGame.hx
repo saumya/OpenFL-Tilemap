@@ -87,6 +87,7 @@ import openfl.Assets;
 	private function addNewTiles():Void{
 		var a = Math.round(Math.random() * 5);
 		var tile:Tile = new Tile(this.aIDs[a], Math.random() * stage.stageWidth, Math.random() * stage.stageHeight);
+		tile.rotation = Math.random() * 360;
 		tilemap.addTile(tile);
 		
 		tileCount++;

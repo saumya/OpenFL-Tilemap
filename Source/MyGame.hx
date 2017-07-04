@@ -8,6 +8,8 @@ import openfl.display.Tileset;
 import openfl.geom.Rectangle;
 
 import openfl.events.Event;
+import openfl.events.MouseEvent;
+
 
 import openfl.Assets;
 
@@ -88,6 +90,9 @@ import openfl.Assets;
 		var a = Math.round(Math.random() * 5);
 		var tile:Tile = new Tile(this.aIDs[a], Math.random() * stage.stageWidth, Math.random() * stage.stageHeight);
 		
+		// 'Tile' can not be used to listen for events.
+		//tile.addEventListener(MouseEvent.CLICK, onTileClick);
+		
 		tile.rotation = Math.random() * 360;
 		tile.scaleX = tile.scaleY = Math.random() * 2;
 
@@ -95,6 +100,12 @@ import openfl.Assets;
 		
 		tileCount++;
 	}
+	
+	/*
+	private function onTileClick(e:MouseEvent):Void{
+		trace('Title Clicked');
+	}
+	*/
 	
 	private function onEachFrame(e:Event):Void{
 		addNewTiles();

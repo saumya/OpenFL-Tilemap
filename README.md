@@ -4,7 +4,8 @@ TileMap Example
 
  - [Reference tutorial is here][1]
  - [Project XML format][2]
- 
+
+ TileMaps can not use `eventHandler`, so we have to put it inside a `event` dispatching Object, such as `Sprite`.
  
 
 

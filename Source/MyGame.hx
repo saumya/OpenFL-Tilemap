@@ -94,7 +94,7 @@ import openfl.Assets;
 		//tile.addEventListener(MouseEvent.CLICK, onTileClick);
 		
 		tile.rotation = Math.random() * 360;
-		tile.scaleX = tile.scaleY = Math.random() * 2;
+		//tile.scaleX = tile.scaleY = Math.random() * 2;
 
 		tilemap.addTile(tile);
 		

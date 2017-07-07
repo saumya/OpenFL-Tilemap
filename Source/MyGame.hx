@@ -15,6 +15,7 @@ import openfl.Assets;
 
 /**
  * A basic example of TileMap
+ * This is supposed to be performant than the other methods of adding graphics
  * @author saumya
  */
 

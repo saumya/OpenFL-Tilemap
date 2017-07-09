@@ -2,7 +2,7 @@ TileMap Example
 ================
  OpenFL 4 added TileMap and this project is an example for using TileMap.
  
- TileMap is a way to add graphics to the UI from a Sprite-map or a single sheet of graphics.
+ TileMap is a way to add graphics to the UI from a Sprite-map ( a single sheet of graphics ).
 
  - [Reference tutorial is here][1]
  - [Project XML format][2]

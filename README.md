@@ -9,7 +9,7 @@ TileMap Example
 
  TileMaps can not use `eventHandler`, so we have to put it inside a `event` dispatching Object, such as `Sprite`.
  
-
+Got the [tilemp from here][4].
 
 
 
@@ -27,3 +27,5 @@ TileMap Example
 
 [1]: http://haxecoder.com/post.php?id=80
 [2]: http://www.openfl.org/lime/docs/project-files/xml-format/ 
+[3]: http://www.gameart2d.com/the-zombies-free-sprites.html
+[4]: http://www.widgetworx.com/projects/sl.html

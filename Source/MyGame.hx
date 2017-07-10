@@ -85,7 +85,24 @@ import openfl.Assets;
 		tilemap.addTile(t6);
 		
 		
-		addEventListener(Event.ENTER_FRAME,onEachFrame);
+		// ======================================================
+		// new Tilemap
+		var fishData:BitmapData = Assets.getBitmapData("assets/fishbaddie_parts.png");
+		var fishTileset = new Tileset(fishData);
+		
+		var fishTilemap:Tilemap = new Tilemap(stage.stageWidth, stage.stageHeight, fishTileset);
+		addChild(fishTilemap);
+		
+		//var fish1:Tile = fishTileset.addRect(new Rectangle(1, 3, 24, 58));
+		//fishTilemap.addTile(fish1);
+		
+		var fish_1_int:Int = fishTileset.addRect(new Rectangle(136, 5, 41, 41)); // get from the position from the sprite-map
+		var fish1:Tile = new Tile(fish_1_int, 10, 10);// add and position on screen
+		fishTilemap.addTile(fish1);
+		// ======================================================
+		
+		
+		//addEventListener(Event.ENTER_FRAME,onEachFrame);
 	}
 	private function addNewTiles():Void{
 		var a = Math.round(Math.random() * 5);
